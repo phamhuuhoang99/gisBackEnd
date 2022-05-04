@@ -7,7 +7,6 @@ const getAll = async (req, res) => {
 
 const getPointInProvince = async (req, res) => {
   const { gid } = req.params;
-  console.log(req.params);
   const data = await provinceService.getPointInProvince(gid);
   res.send(data);
 };
