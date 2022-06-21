@@ -1,4 +1,4 @@
-const pointService = require("../services/point.services");
+const pointService = require("../services/point.service");
 
 const getAll = async (req, res) => {
   const data = await pointService.getAll();
